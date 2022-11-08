@@ -30,11 +30,12 @@ function Add() {
     return (
         <div className="form">
             <h1>Add Books</h1>
-            <input type="text" onChange={handleChange} placeholder='Book title' name="title" id="" />
-            <input type="text" onChange={handleChange} placeholder='Book desc' name="desc" id="" />
-            <input type="number" onChange={handleChange} placeholder='Book price' name="cover" id="" />
-            <input type="text" onChange={handleChange} placeholder='Book cover' name="price" id="" />
+            <input type="text" onChange={handleChange} placeholder='Book title' name="title" />
+            <input type="text" onChange={handleChange} placeholder='Book desc' name="desc" />
+            <input type="number" onChange={handleChange} placeholder='Book price' name="cover" />
+            <input type="text" onChange={handleChange} placeholder='Book cover' name="price" />
             <button onClick={handleClick}>Add</button>
+
             <Link to="/">See all books</Link>
         </div>
     )
