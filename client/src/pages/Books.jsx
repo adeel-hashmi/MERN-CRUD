@@ -39,7 +39,7 @@ function Books() {
                         <p>{book.desc}</p>
                         <span>${book.price}</span>
                         <button onClick={() => handleDelete(book.id)}>Delete</button>
-                        <button>Update</button>
+                        <button><Link to={`/update/${book.id}`}>Update</Link></button>
                     </div>
                 ))}
             </div>
