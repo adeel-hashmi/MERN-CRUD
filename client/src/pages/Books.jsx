@@ -44,7 +44,7 @@ function Books() {
                                     {book.cover && <img className="bg-black" src={book.cover} alt={`Book no. ${book.id}`} />}
                                     <h2 className='relative w-full flex-none mb-2 text-2xl font-semibold'>{book.title}</h2>
                                     <p>{book.desc}</p>
-                                    <span className='relative text-lg text-white'>${book.price}</span>
+                                    <p className='relative text-lg text-black'>${book.price}</p>
                                     <button className='px-6 h-12 uppercase font-semibold tracking-wider border-2 border-black bg-teal-400 text-black' onClick={() => handleDelete(book.id)}>Delete</button>
                                     <button className='px-6 h-12 uppercase font-semibold tracking-wider border border-slate-200 text-slate-900'><Link to={`/update/${book.id}`}>Update</Link></button>
                                 </div>

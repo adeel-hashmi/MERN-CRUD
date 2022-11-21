@@ -8,7 +8,6 @@ app.use(express.json())
 app.use(cors())
 
 const db = mysql.createConnection({
-    // host: "process.env.DB_URL || localhost",
     host: "localhost",
     user: "root",
     password: "root",
@@ -78,7 +77,6 @@ app.put("/books/:id", (req, res) => {
 });
 
 
-// app.listen(process.env.PORT || 8800, () => {
 app.listen(8800, () => {
     console.log("Connected to backend !")
 })
